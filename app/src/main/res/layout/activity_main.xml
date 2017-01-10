@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+>
     <data>
         <import type="android.view.View"/>
 
         <variable name="mainViewModel"
-                  type="com.example.ekta.databinding.view_models.MainViewModel"/>
+                  type="com.example.ekta.databinding.viewmodels.MainViewModel"/>
 
         <variable name="presenter"
                   type="com.example.ekta.databinding.main.MainPresenter"/>
@@ -26,8 +26,8 @@
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/edit_text"
             android:layout_width="match_parent"
-            android:text="@={mainViewModel.input}"
             android:layout_height="wrap_content"
+            android:text="@={mainViewModel.input}"
         />
 
         <TextView
@@ -40,15 +40,15 @@
         <android.support.v7.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@={mainViewModel.input}"
             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             android:onClick="@{() -> presenter.onButtonClick(mainViewModel)}"
-            android:layout_centerHorizontal="true"/>
+            android:text="@={mainViewModel.input}"/>
 
         <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="@{mainViewModel.loading}"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true"
+            android:visibility="@{mainViewModel.loading}"/>
     </RelativeLayout>
 </layout>

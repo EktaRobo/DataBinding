@@ -1,6 +1,6 @@
 package com.example.ekta.databinding.main;
 
-import com.example.ekta.databinding.view_models.MainViewModel;
+import com.example.ekta.databinding.viewmodels.MainViewModel;
 
 /**
  * Created by ekta on 10/1/17.

@@ -1,12 +1,12 @@
 package com.example.ekta.databinding.main;
 
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.example.ekta.databinding.R;
 import com.example.ekta.databinding.databinding.ActivityMainBinding;
-import com.example.ekta.databinding.view_models.MainViewModel;
+import com.example.ekta.databinding.viewmodels.MainViewModel;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View{
 

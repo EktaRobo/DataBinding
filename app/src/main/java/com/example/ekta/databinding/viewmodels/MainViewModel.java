@@ -1,4 +1,4 @@
-package com.example.ekta.databinding.view_models;
+package com.example.ekta.databinding.viewmodels;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
@@ -14,6 +14,11 @@ import com.android.databinding.library.baseAdapters.BR;
 public class MainViewModel extends BaseObservable {
     private String input;
     private boolean isLoading;
+
+    @BindingConversion
+    public static int convertBooleanToVisibility(boolean visible) {
+        return visible ? View.VISIBLE : View.GONE;
+    }
 
     @Bindable
     public boolean isLoading() {
@@ -33,10 +38,5 @@ public class MainViewModel extends BaseObservable {
     public void setInput(String input) {
         this.input = input;
         notifyPropertyChanged(BR.input);
-    }
-
-    @BindingConversion
-    public static int convertBooleanToVisibility(boolean visible) {
-        return visible ? View.VISIBLE : View.GONE;
     }
 }
