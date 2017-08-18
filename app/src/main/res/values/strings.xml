@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DataBinding</string>
+    <string name="zero">Zero</string>
+    <string name="inr">INR:</string>
 </resources>

@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.android.databinding.library.baseAdapters.BR;
 
+
 /**
  * Created by ekta on 9/1/17.
  */
